@@ -263,6 +263,7 @@ export class ShadowAccessory {
 					ss = pushButtonServices;
 				break;
 			case "com.fibaro.FGRGBW441M":
+			case "com.fibaro.FGRGBW442CC"				
 			case "com.fibaro.colorController":
 				let service = {controlService: new hapService.Lightbulb(device.name), characteristics: [hapCharacteristic.On, hapCharacteristic.Brightness, hapCharacteristic.Hue, hapCharacteristic.Saturation]};
 				service.controlService.HSBValue = {hue: 0, saturation: 0, brightness: 100};
